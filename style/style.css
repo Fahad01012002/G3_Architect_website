@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* color section */
+
+.dark-01 {
+    color: rgba(19, 19, 19, 1);
+}
+
+.dark-02 {
+    color: rgba(66, 66, 66, 1);
+}
+
+.dark-03 {
+    color: rgba(114, 114, 114, 1);
+}
+
+.dark-04 {
+    color: rgba(161, 161, 161, 1);
+}
+
+.dark-05 {
+    color: rgba(208, 208, 208, 1);
+}
+
+.dark-06 {
+    color: rgba(231, 231, 231, 1);
+}
+
+.dark-07 {
+    color: rgba(243, 243, 243, 1);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.primary-button {
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 48px;
+}
+
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* Main style */
+
+
+/* header style */
+
+header {
+    padding-top: 50px;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* navbar style */
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 2.81rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    gap: 80px;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 1.12rem;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+/* banner style */
+
+.banner {
+    margin-top: 102px;
+}
+
+.banner-content {
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.banner-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.image img {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    .display-flex {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 40px;
+        gap: 40px;
+    }
+}
