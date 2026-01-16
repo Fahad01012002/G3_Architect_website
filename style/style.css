@@ -383,10 +383,13 @@ header {
     .features-description,
     .banner-description,
     .facts-description,
-    .footer-description,
-    .features-descri {
+    .footer-description {
         font-size: 0.8rem;
         text-align: center;
+    }
+
+    .features-descri{
+        font-size: 0.8rem;
     }
 
     .feature-title,
