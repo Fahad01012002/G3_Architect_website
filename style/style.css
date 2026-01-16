@@ -182,13 +182,13 @@ header {
 
 /* Features section style */
 
-.features-section{
+.features-section {
     margin-top: 39px;
     max-width: 586px;
     margin-right: 160px;
 }
 
-.features-title{
+.features-title {
     font-size: 2.81rem;
     font-weight: 700;
     border-left: 5px solid rgba(255, 144, 14, 1);
@@ -196,31 +196,31 @@ header {
     margin-bottom: 24px;
 }
 
-.features-description{
+.features-description {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 30px;
 }
 
-.features-card{
+.features-card {
     padding: 30px 40px 30px 30px;
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
 }
 
-.features-heading{
+.features-heading {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 9px;
 }
 
-.features-descri{
+.features-descri {
     margin: 0;
 }
 
-#badge{
+#badge {
     padding: 45px 42px;
     font-size: 1.56rem;
     font-weight: 500;
@@ -229,7 +229,7 @@ header {
     margin-top: -120px;
 }
 
-.big-text{
+.big-text {
     font-size: 4rem;
     font-weight: bold;
     line-height: 70px;
@@ -238,66 +238,72 @@ header {
 
 /* fact style */
 
-.facts{
+.facts {
     margin-top: 130px;
     margin-bottom: 95px;
 }
 
-.fact-content{
+.fact-content {
     max-width: 540px;
 }
 
-.fact-container{
+.fact-container {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 124px;
 }
 
-.fact{
+.fact {
     text-align: center;
     padding: 45px 36px 58px 36px;
     border-radius: 8px;
     border: 2px solid rgba(255, 144, 14, 1);
 }
 
-.fact-number{
+.fact-number {
     font-size: 2.81rem;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
-.face-name{
+.face-name {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
 /* footer style */
 
-.footer-content{
+.footer-content {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.sponsor{
+.sponsor {
     display: grid;
-    grid-template-columns: repeat(5 , 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 155px;
     margin-bottom: 130px;
 }
 
-.sponsor img{
+.sponsor img {
     filter: grayscale(100%);
 }
 
-.foot{
+.foot {
     text-align: center;
     background-color: rgba(255, 244, 231, 1);
     padding: 35px 0;
 }
 
-.foot-description{
+.foot-description {
     font-size: 1.5rem;
+}
+
+/* display-hide */
+
+.hide {
+    display: none !important;
 }
 
 
@@ -308,30 +314,102 @@ header {
         flex-direction: column;
     }
 
+    main{
+        margin-top: 0;
+    }
+
     .nav-links {
         margin-top: 40px;
         gap: 40px;
     }
 
+    .teams{
+        margin-bottom: 50px;
+    }
+
     .teams-image {
         grid-template-columns: repeat(1, 1fr);
+        gap: 6px;
     }
 
     .our-features {
-        margin-left: 20px;
+        margin-left:0;
+        margin-top: 8px;
+        text-align: center;
     }
 
-    .fact{
+    #badge{
+        padding: 20px;
+        margin-left: 25px;
+    }
+
+    .features-section{
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .features-title{
+        font-size: 2.2rem;
+    }
+
+    .features-image img{
+        width: 100%;
+    }
+
+    .fact {
         padding: 10px;
     }
 
-    .fact-container{
-        grid-template-columns: repeat(2 , 1fr);
+    .facts{
+        margin-top: 0;
+    }
+
+    .fact-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+        gap: 20px;
+    }
+
+    .fact-content {
+        text-align: center;
+    }
+
+    .foot {
+        padding: 20px;
+    }
+
+    .foot-description,
+    .feature-description,
+    .features-description,
+    .banner-description,
+    .facts-description,
+    .footer-description,
+    .features-descri {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .feature-title,
+    .facts-heading,
+    .footer-heading {
+        font-size: 1.8rem;
+    }
+
+    .sponsor {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .sponsor img {
+        width: 250px;
     }
 }
 
 @media screen and (min-width : 576px) and (max-width: 992px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
 }
