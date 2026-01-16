@@ -380,7 +380,6 @@ header {
 
     .foot-description,
     .feature-description,
-    .features-description,
     .banner-description,
     .facts-description,
     .footer-description {
@@ -390,6 +389,11 @@ header {
 
     .features-descri{
         font-size: 0.8rem;
+    }
+
+    .features-description{
+        font-size: 0.8rem;
+        margin-left: 23px;
     }
 
     .feature-title,
